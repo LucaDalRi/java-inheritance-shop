@@ -11,12 +11,20 @@ public class Prodotto {
 
 //    Constructor
 
-    Prodotto(String name, String description, double price, int taxes) {
+    public Prodotto(String name, String description, double price, int taxes) {
         this.serialCode = getSerialCode();
         this.name = name;
         this.description = description;
         this.price = price;
         this.taxes = taxes;
+    }
+
+    public Prodotto(Prodotto prodotto) {
+        this.serialCode = getSerialCode();
+        this.name = prodotto.name;
+        this.description = prodotto.description;
+        this.price = prodotto.price;
+        this.taxes = prodotto.taxes;
     }
 
     //    Methods
@@ -39,7 +47,7 @@ public class Prodotto {
     }
 
     public String getFullName() {
-        return this.name + "-" + getSerialCode();
+        return this.name + "-" + this.serialCode;
     }
 
     public String getName() {
@@ -56,5 +64,10 @@ public class Prodotto {
 
     public int getTaxes() {
         return this.taxes;
+    }
+
+    @Override
+    public String toString() {
+        return "Contenuto " + name;
     }
 }
