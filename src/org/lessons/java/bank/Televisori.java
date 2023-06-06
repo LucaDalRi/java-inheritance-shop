@@ -11,6 +11,28 @@ public class Televisori extends Prodotto {
         this.isSmart = isSmart;
     }
 
+    public Televisori(Prodotto prodotto, int screenSize, boolean isSmart) {
+        super(prodotto);
+        this.screenSize = screenSize;
+        this.isSmart = isSmart;
+    }
+
+    public int getScreenSize() {
+        return screenSize;
+    }
+
+    public void setScreenSize(int screenSize) {
+        this.screenSize = screenSize;
+    }
+
+    public boolean isSmart() {
+        return isSmart;
+    }
+
+    public void setSmart(boolean smart) {
+        isSmart = smart;
+    }
+
     @Override
     public String toString() {
         return "Serie " + getName();

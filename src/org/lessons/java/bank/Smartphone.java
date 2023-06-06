@@ -17,8 +17,20 @@ class Smartphone extends Prodotto {
         this.storageAmount = storageAmount;
     }
 
+    public int getImeiCode() {
+        return imeiCode;
+    }
+
+    public void setImeiCode(int imeiCode) {
+        this.imeiCode = imeiCode;
+    }
+
     public int getStorageAmount() {
         return this.storageAmount;
+    }
+
+    public void setStorageAmount(int storageAmount) {
+        this.storageAmount = storageAmount;
     }
 
     @Override
