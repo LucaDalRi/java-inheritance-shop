@@ -35,6 +35,9 @@ public class Televisori extends Prodotto {
 
     @Override
     public String toString() {
-        return "Serie " + getName();
+        return "Televisori{" +
+                "screenSize=" + screenSize +
+                ", isSmart=" + isSmart +
+                '}';
     }
 }

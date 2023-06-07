@@ -36,13 +36,13 @@ public class Prodotto {
 
 //    Getter Setter
 
-    public int getSerialCode() {
+    private int getSerialCode() {
 
         Random random = new Random();
 
-        serialCode = random.nextInt((99999999 - 10000000) + 1) + 10000000;
+        int tempSerial = random.nextInt((99999999 - 10000000) + 1) + 10000000;
 
-        return serialCode;
+        return tempSerial;
 
     }
 
